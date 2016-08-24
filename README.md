@@ -47,7 +47,7 @@ A Structured value that holds the parameter values to be used during the invocat
   "japi": "1.0",
   "success": false,
   "error": {
-    "code": "100",
+    "code": 100,
     "message": "Invalid Request"
   }
 }
