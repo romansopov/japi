@@ -30,3 +30,24 @@ A Structured value that holds the parameter values to be used during the invocat
 
 ## Response object
 
+```json
+{
+  "japi": "1.0",
+  "result": [{
+    "name": "Roman Sopov"
+  }],
+  "id": 1,
+  "token": "authentication token"
+}
+```
+
+```json
+{
+  "japi": "1.0",
+  "error": {
+    "code": "100",
+    "message": "Invalid Request"
+  },
+  "id": 1
+}
+```
