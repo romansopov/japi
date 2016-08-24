@@ -2,9 +2,9 @@
 
 Modern JSON-RPC API
 
-# Request object
+## Request object
 
-**japi**
+### japi
 
  A String specifying the version of the JAPI protocol.
 
