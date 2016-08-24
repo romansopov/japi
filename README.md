@@ -33,6 +33,7 @@ A Structured value that holds the parameter values to be used during the invocat
 ```json
 {
   "japi": "1.0",
+  "success": true,
   "result": [{
     "name": "Roman Sopov"
   }],
@@ -44,10 +45,10 @@ A Structured value that holds the parameter values to be used during the invocat
 ```json
 {
   "japi": "1.0",
+  "success": false,
   "error": {
     "code": "100",
     "message": "Invalid Request"
-  },
-  "id": null
+  }
 }
 ```
