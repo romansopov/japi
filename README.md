@@ -27,3 +27,6 @@ A Structured value that holds the parameter values to be used during the invocat
   "token": "authentication token"
 }
 ```
+
+## Response object
+
