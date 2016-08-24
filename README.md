@@ -38,7 +38,7 @@ A Structured value that holds the parameter values to be used during the invocat
     "name": "Roman Sopov"
   }],
   "id": 1,
-  "token": "authentication token"
+  "token": "new authentication token"
 }
 ```
 
