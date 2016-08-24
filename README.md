@@ -19,9 +19,9 @@ A Structured value that holds the parameter values to be used during the invocat
 ```json
 {
   "japi": "1.0",
-  "method": "controller.method",
+  "method": "users.get",
   "params": [{
-    "name": "Roman Sopov"
+    "uid": "5"
   }],
   "id": 1,
   "token": "authentication token"
@@ -35,7 +35,9 @@ A Structured value that holds the parameter values to be used during the invocat
   "japi": "1.0",
   "success": true,
   "result": [{
-    "name": "Roman Sopov"
+    "uid": 5,
+    "name": "Roman Sopov",
+    "email": "roman@sopov.net"
   }],
   "id": 1,
   "token": "new authentication token"
