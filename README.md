@@ -1,6 +1,4 @@
-# JAPI 1.0 Specification
-
-Modern JSON-RPC API
+# Спецификация протокола JAPI
 
 ## Объект запроса
 
