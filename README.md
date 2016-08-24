@@ -2,7 +2,7 @@
 
 Modern JSON-RPC API
 
-## Request object
+## Объект запроса
 
 ### japi
 
@@ -36,7 +36,7 @@ A Structured value that holds the parameter values to be used during the invocat
 }
 ```
 
-## Response object
+## Объект ответа
 
 ### Ошибки
 
