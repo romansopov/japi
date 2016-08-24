@@ -2,6 +2,10 @@
 
 Modern JSON-RPC API
 
+```
+POST
+```
+
 ```json
 {
   "japi": "1.0",
