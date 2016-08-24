@@ -30,6 +30,14 @@ A Structured value that holds the parameter values to be used during the invocat
 
 ## Response object
 
+### Ошибки
+
+ - 10000 - Ошибки при разборе запроса
+ - 20000 - Ошибки при валидации праметров
+ - 30000 - Ошибки логики приложения
+ - 40000 - Ошибки сервера приложения
+ - 50000 - Неизвестные
+
 ```json
 {
   "japi": "1.0",
