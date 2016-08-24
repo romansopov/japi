@@ -1,4 +1,4 @@
-# JAPI 1.0
+# JAPI 1.0 Specification
 
 Modern JSON-RPC API
 
