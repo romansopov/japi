@@ -16,6 +16,10 @@ A String containing the name of the contreller and the method.
 
 A Structured value that holds the parameter values to be used during the invocation of the method. This member MAY be omitted.
 
+### sign
+
+Электронная подпись хэша всех переданных параметров
+
 ```json
 {
   "japi": "1.0",
@@ -24,7 +28,11 @@ A Structured value that holds the parameter values to be used during the invocat
     "uid": "5"
   }],
   "id": 1,
-  "token": "authentication token"
+  "token": "authentication token",
+  "sign": {
+    "val": "e10adc3949ba59abbe56e057f20f883e",
+    "alg": "rsa"
+  }
 }
 ```
 
