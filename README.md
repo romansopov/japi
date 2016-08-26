@@ -10,8 +10,13 @@
 
 Вызываемый метод API.
 
-- "method": "function" --> function();
-- "method": "object.method" --> object.method();
+```"method": "function"```
+
+Вызывает метод объекта приложения: app.function();
+
+```"method": "object.method"```
+
+Вызывает метод объекта подключенного модуля: object.method();
 
 ### params
 
