@@ -76,8 +76,8 @@ param1:value1:param2:value2:param3:value3
   "japi": "1.0",
   "success": false,
   "error": {
-    "code": 100,
-    "message": "Invalid Request"
+    "code": 20000,
+    "message": "Ошибка в параметрах запроса"
   }
 }
 ```
