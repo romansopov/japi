@@ -11,7 +11,7 @@
 Вызываемый метод API.
 
 - "method": "function" --> function();
-- "method": "function.function" --> function.function();
+- "method": "object.method" --> object.method();
 
 ### params
 
