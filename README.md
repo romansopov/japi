@@ -4,11 +4,14 @@
 
 ### japi
 
-A String specifying the version of the JAPI protocol.
+Версия протокола
 
 ### method
 
-A String containing the name of the contreller and the method.
+Вызываемый метод API
+
+- "method": "function" --> function();
+- "method": "function.function" --> function.function();
 
 ### params
 
