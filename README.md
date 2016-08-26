@@ -4,22 +4,28 @@
 
 ### japi
 
-Версия протокола
+Версия протокола в системе.
 
 ### method
 
-Вызываемый метод API
+Вызываемый метод API.
 
 - "method": "function" --> function();
 - "method": "function.function" --> function.function();
 
 ### params
 
-A Structured value that holds the parameter values to be used during the invocation of the method. This member MAY be omitted.
+Параметры запроса. Массив с объектами, может отсуствовать если запрос без параметров.
 
 ### sign
 
-Электронная подпись хэша всех переданных параметров
+Электронная подпись хэша всех переданных параметров. 
+
+Все параметры сортируются в алфовитном порядке и склеиваются в одну строку:
+
+```
+param1:value1:param2:value2:param3:value3
+```
 
 ```json
 {
