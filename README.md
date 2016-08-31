@@ -95,3 +95,16 @@ param1:value1:param2:value2:param3:value3
   }
 }
 ```
+
+Если запросу требуется аутентификация, будет возвращен код 30100 и передан временный токен аутентификации.
+
+```json
+{
+  "success": false,
+  "error": {
+    "code": 30100,
+    "message": "Требуется аутентификация"
+  },
+  "token": "new authentication token"
+}
+```
