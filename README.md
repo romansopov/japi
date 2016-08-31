@@ -44,7 +44,7 @@ param1:value1:param2:value2:param3:value3
 
 ```json
 {
-  "japi": "1.0",
+  "japi": "1.0.0",
   "method": "users.get",
   "params": [{
     "uid": "5"
@@ -68,9 +68,10 @@ param1:value1:param2:value2:param3:value3
  - 40000 - Ошибки сервера приложения
  - 50000 - Неизвестные
 
+При ```success:true``` может присутствовать ```result```, при ```success:false``` обязательным будет присутствие ```error```
+
 ```json
 {
-  "japi": "1.0",
   "success": true,
   "result": [{
     "uid": 5,
@@ -84,7 +85,6 @@ param1:value1:param2:value2:param3:value3
 
 ```json
 {
-  "japi": "1.0",
   "success": false,
   "error": {
     "code": 20000,
