@@ -120,3 +120,8 @@ param1:value1:param2:value2:param3:value3
   "token": "new authentication token"
 }
 ```
+
+## Используемая документация
+
+http://jsonapi.org/  
+http://jsonrpc.org/
