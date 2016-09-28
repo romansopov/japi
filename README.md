@@ -123,5 +123,6 @@ param1:value1:param2:value2:param3:value3
 
 ## Используемая документация
 
+http://json.org/  
 http://jsonapi.org/  
 http://jsonrpc.org/
