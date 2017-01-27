@@ -1,0 +1,19 @@
+{
+  "name": "node-japi",
+  "version": "1.0.2",
+  "description": "JSON-RPC API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romansopov/japi.git"
+  },
+  "author": "Roman Sopov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romansopov/japi/issues"
+  },
+  "homepage": "https://github.com/romansopov/japi#readme"
+}
