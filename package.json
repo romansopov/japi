@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/romansopov/japi/issues"
   },
-  "homepage": "https://github.com/romansopov/japi#readme"
+  "homepage": "https://github.com/romansopov/japi#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0"
+  }
 }
