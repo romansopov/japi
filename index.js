@@ -105,7 +105,7 @@ let japi = (config) => {
 let req = (host, data) => {
   return new Promise((resolve, reject) => {
     request({
-      url:    url,
+      url:    host,
       method: 'POST',
       json:   true,
       body:   data
