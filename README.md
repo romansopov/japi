@@ -130,7 +130,15 @@ japi({
   });
 
   Promise.all([p1, p2, p3, p4, p5]).then(values => {
-    console.log(values);
+    /* console.log(values);
+    [ 
+      { success: true, result: true },
+      { success: false, error: { code: 2, message: 'Object not found' } },
+      { success: false, error: { code: 3, message: 'Method not found' } },
+      { success: false, error: { code: 100, message: 'Validation Error: option "test" not equal 1' } },
+      { success: false, error: { code: 100, message: 'Validation Error: option "test" is undefined' } } 
+    ]
+    */
     server.close();
   });
   
