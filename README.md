@@ -1,4 +1,4 @@
-# Спецификация JAPI
+# JAPI Microservice
 
 JAPI - микросервис и протокол обмена данными между клиентом и сервером на основе формата JSON.
 
@@ -19,7 +19,7 @@ JAPI - микросервис и протокол обмена данными м
 let app = {
   '1.0.0': {
     getUser: () => {
-      // Funtion
+      // Function body
     }
   }
 }
@@ -37,7 +37,7 @@ let japi = {
 }
 ```
 
-Вызывает метод ``getUser`` версии ``1.0.0``
+Вызывает метод ``getUser`` объекта приложения ``app`` версии ``1.0.0``
 
 ### params
 
@@ -93,6 +93,7 @@ japi({
   port: 30000,
   app:  app
 }).then(server => {
+  // server - https://nodejs.org/dist/latest-v6.x/docs/api/http.html#http_class_http_server 
   let p1 = req('http://127.0.0.1:30000', {
     japi:   "1.0.0",
     method: "test",
