@@ -37,7 +37,7 @@ let japi = (config) => {
                 });
               }
               else if (_.isNull(req.body.params) || _.isUndefined(req.body.params)) {
-                config.app[req.body.japi][req.body.method].then(result => {
+                config.app[req.body.japi][req.body.method]().then(result => {
                   res.json({
                     success: true,
                     result: result
