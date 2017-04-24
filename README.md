@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm-dl/node-japi.png)](https://nodei.co/npm/node-japi/)
+
 # JAPI Microservice
 
 JAPI - микросервис и протокол обмена данными между клиентом и сервером на основе формата JSON.
