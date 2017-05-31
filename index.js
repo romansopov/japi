@@ -3,6 +3,7 @@ const http    = require('http');
 const express = require('express')();
 const body    = require('body-parser');
 const request = require('request');
+const uuid    = require('node-uuid');
 
 /**
  * JAPI
@@ -10,6 +11,21 @@ const request = require('request');
  * @returns {Promise}
  */
 let japi = (config) => {
+  
+  // Configure Socket.IO
+  if(!_.isUndefined(config.socket)) {
+    if(_.isOject(config.socket)) {
+      const io      = require('socket.io')(http, {path:'/japi'});
+      const redis   = require('redis');
+      const redisIo = require('socket.io-redis');
+      const redisClient = redis.createClient();
+      io.adapter(redisIo({ host: 'localhost', port: 6379 }));
+      io.engine.generateId = (req) => {
+        return uuid.v4();
+      }
+    }
+  }
+  
   return new Promise((resolve, reject) => {
     // Run App
     express.use(body.json());
@@ -89,7 +105,6 @@ let japi = (config) => {
     });
 
     // Logs
-    
     
     // Create Server
     const server = http.createServer(express).listen(config.port, config.host, 511, () => {

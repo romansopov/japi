@@ -1,0 +1,26 @@
+{
+  "name": "node-japi",
+  "version": "1.0.6",
+  "description": "JAPI Microservice",
+  "keywords": ["japi", "json api", "microservice", "json-rpc", "rpc"],
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romansopov/japi.git"
+  },
+  "author": "Roman Sopov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romansopov/japi/issues"
+  },
+  "homepage": "https://github.com/romansopov/japi#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "request": "^2.79.0",
+    "underscore": "^1.8.3"
+  }
+}
