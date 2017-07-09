@@ -1,11 +1,18 @@
-const _ = require('underscore');
+const _ = require("underscore")
 
-module.exports = {
-  test: (data) => {
+module.exports = class App {
+  
+  constructor(name) {
+    this.name = name
+    this.testValue = 1
+  }
+  
+  test(data) {
     return new Promise((resolve, reject) => {
-      if(!_.isUndefined(data.test)) {
-        if(data.test == 1) {
-          resolve(true);
+      console.log(this)
+      if (!_.isUndefined(data.test)) {
+        if (data.test == 1) {
+          resolve(true)
         } else {
           reject({
             code: 100,
@@ -13,12 +20,13 @@ module.exports = {
           });
         }
       }
-      if(_.isUndefined(data.test)) {
+      if (_.isUndefined(data.test)) {
         reject({
           code: 100,
           message: 'Validation Error: option "test" is undefined'
-        });
+        })
       }
-    });
+    })
   }
-};
+  
+}
